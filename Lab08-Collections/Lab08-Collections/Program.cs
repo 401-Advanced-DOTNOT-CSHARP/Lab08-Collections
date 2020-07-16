@@ -67,13 +67,56 @@ namespace Lab08_Collections
                 }
                 Console.Clear();
             }
+        }
+        /// <summary>
+        /// The ForEach is iterating over all items in the BookBag and displaying them to the user.
+        /// response is the users input
+        /// converting the users response to an int
+        /// TryGetValue is verifying that books contains the book requesting to be removed
+        /// remove is removing the book from their checked out books and then adding it back to the available list of books
+        /// </summary>
+        static void ReturnBook()
+        {
+            Dictionary<int, Book> books = new Dictionary<int, Book>();
+            Console.WriteLine("Which book would you like to return");
+            int counter = 1;
+            foreach (var item in BookBag)
+            {
+                books.Add(counter, item);
+                Console.WriteLine($"{counter++}. {item.Title} - {item.Author.FirstName} {item.Author.LastName}");
 
+            }
 
+            string response = Console.ReadLine();
+            int.TryParse(response, out int selection);
+            books.TryGetValue(selection, out Book returnedBook);
+            BookBag.Remove(returnedBook);
+            Library.Add(returnedBook);
+        }
+        /// <summary>
+        /// Is creating a new instance of a book which takes in the users inputs and creates a new instance of an author which takes in the users input
+        /// the book then takes in the users input for number of pages, genre and then adding the book to the library
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="numberOfPages"></param>
+        /// <param name="genre"></param>
+        static void AddABook(string title, string firstName, string lastName, int numberOfPages, Genre genre)
+        {
+            Book book = new Book()
+            {
+                Title = title,
+                Author = new Author()
+                {
+                    FirstName = firstName,
+                    LastName = lastName
+                },
+                NumberOfPages = numberOfPages,
+                Genre = genre
+            };
 
-
-
-
-
+            Library.Add(book);
         }
     }
 }

@@ -47,6 +47,7 @@ Then select and open ```Lab08-Colelctions.sln```
 
 ### Change Log
 ***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
+1.3: Added the 2 methods given to us from the Lab and comments on what they do - July 15 2020
 1.2: Created Classes: Book, Author and Library. Did some basic code in each as well as Program - July 15 2020
 1.1: Created README, gitignore, and initial project - July 15 2020
 
