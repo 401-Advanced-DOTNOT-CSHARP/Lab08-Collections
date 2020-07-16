@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Lab08_Collections.Class
 {
-    public class Library<T> : TEnumberable
+    public class Library<T> : IEnumberable
     {
-        T[] bookshelf = new T[6];
+        T[] bookshelf = new T[10];
         int bookCount = 0;
 
         public void AddBook(T newBook)
@@ -17,10 +17,6 @@ namespace Lab08_Collections.Class
             }
             bookshelf[bookCount++] = newBook;
         }
-        public T RemoveBook(T item)
-        {
 
+            }
         }
-    }
-
-}
