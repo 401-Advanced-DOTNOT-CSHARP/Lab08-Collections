@@ -7,11 +7,12 @@ namespace Lab08_Collections.Class
     public class Book
     {
         public string Title { get; set; }
-        public string Author { get; set; }
-        public string Genre { get; set; }
+        public Author Author { get; set; }
+        public Genre Genre { get; set; }
+        public int NumberOfPages { get; set; }
     }
-
-    enum Genre
+    // Enum List of possible Genre's to be listed
+    public enum Genre
     {
         Scifi,
         History,

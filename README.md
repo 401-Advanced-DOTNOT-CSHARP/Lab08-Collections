@@ -1,4 +1,4 @@
-# Console Application README Example
+# Console Application Lab 8 Collections
 
 
 ## Lab08 - Collections
@@ -10,7 +10,6 @@
 ----
 
 ## Description
-***[Tell me about your application, should be about a paragraph]***
 Create a console app that allows a user to view a list of books, add a book to the list, check out a book, view books they have checked out and return a book they have checked out.
 
 ---
@@ -33,20 +32,9 @@ Then select and open ```Lab08-Colelctions.sln```
 
 ---
 
-### Visuals
-***[Add screenshots of your application in action]***
-
-#### Application Start
-![Image 1](https://via.placeholder.com/750x500)
-#### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-#### Application End
-![Image 1](https://via.placeholder.com/750x500)
-
----
-
 ### Change Log
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
+1.5: Added all tests, all are passing after modifications to the remove method on library - July 25 2020
+1.4: Added methods that were missing in program and library. Corrected some mistakes in syntax and updated README - July 25 2020
 1.3: Added the 2 methods given to us from the Lab and comments on what they do - July 15 2020
 1.2: Created Classes: Book, Author and Library. Did some basic code in each as well as Program - July 15 2020
 1.1: Created README, gitignore, and initial project - July 15 2020
